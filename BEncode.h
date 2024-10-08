@@ -50,4 +50,4 @@ class BEncode {
 			}
 			return ret + "e";
 		}
-}
+};
