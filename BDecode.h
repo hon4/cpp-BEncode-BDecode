@@ -52,14 +52,14 @@ class BDecode {
 			i += 1; //skp 'i'
 			std::string retstr;
 			while (s[i] != 'e') {
-				ret += s[i];
+				retstr += s[i];
 				i += 1;
 			}
 			i += 1; //skp 'e'
 			return std::stol(retstr);
 		}
 		
-		std::vector<std::any> BDecode_list(std::string, unsigned int &i) {
+		std::vector<std::any> BDecode_list(std::string s, unsigned int &i) {
 			std::vector<std::any> ret;
 			i += 1; //skp 'l'
 			while (s[i] != 'e') {
