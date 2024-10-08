@@ -73,5 +73,7 @@ class BDecode {
 					ret.push_back(BDecode_list(s, i));
 				}
 			}
+			i += 1; //skp 'e'
+			return ret;
 		}
 };
