@@ -34,7 +34,7 @@ class BDecode {
 		std::string BDecode_str(std::string s, unsigned int &i) {
 			std::string lenstr;
 			while (isdigit(s[i])) {
-				lenstr += std::to_string(s[i]);
+				lenstr += s[i];
 				i += 1;
 			}
 			i += 1; //skp ':'
